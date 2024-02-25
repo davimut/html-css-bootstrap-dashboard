@@ -19,14 +19,14 @@
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px; width: 100%; margin-left: 50px;">
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Anagrafica Utenti</a>
                       </li>
-                      <li class="nav-item dropdown">
+                      <li class="nav-item dropdown col-8">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                          Storico prestiti
                         </a>
@@ -40,11 +40,22 @@
                       <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true"></a>
                       </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Storico prestiti
+                        </a>
+                        <ul style="align-self: flex-end;" class="dropdown-menu ">
+                          <li><a class="dropdown-item" href="#">Raccolta</a></li>
+                          <li><a class="dropdown-item" href="#">I tuoi preferiti</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Continua a leggere</a></li>
+                        </ul>
+                      </li>
+                      </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
-                      <button class="btn btn-outline-light" type="submit">Cerca</button>
-                    </form>
+                    <div>
+                      
+                    </div>
                   </div>
                 </div>
               </nav>
