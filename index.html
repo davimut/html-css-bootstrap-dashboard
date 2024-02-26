@@ -17,23 +17,22 @@
 
   <header>
     <!-- navbar con logo liste a spazione -->
-    <nav class="py-0 navbar navbar-expand-lg bg-body-tertiary navbar-dark">
-      <div style=" background-color: rgb(51, 43, 63);" class="container-fluid">
+    <nav class="py-0 navbar navbar-expand-lg bg-black navbar-dark  border-bottom border-body">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#"><img class="ms-3 p-2 " style="width: 5rem" src="./img/duck.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
           aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-            style="--bs-scroll-height: 100px; width: 100%; margin-left: 50px;">
+          <ul class="navbar-nav  navbar-nav-scroll d-flex">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Anagrafica Utenti</a>
             </li>
-            <li class="nav-item dropdown col-8">
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Storico prestiti
@@ -47,15 +46,15 @@
                 <li><a class="dropdown-item" href="#">Continua a leggere</a></li>
               </ul>
             </li>
-            <li class="nav-item">
+            <li class="">
               <a class="nav-link disabled" aria-disabled="true"></a>
             </li>
-            <li class="nav-item dropdown"> <!-- menu lato destro navbar -->
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            <li class="nav-item dropdown ms-auto"> <!-- menu lato destro navbar -->
+              <a class="nav-link dropdown-toggle  ms-auto" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Menu
               </a>
-              <ul style="align-self: flex-end;" class="dropdown-menu ">
+              <ul class="dropdown-menu ">
                 <li><a class="dropdown-item" href="#">Profilo</a></li>
                 <li><a class="dropdown-item" href="#">I tuoi ordini</a></li>
                 <li>
@@ -63,18 +62,17 @@
                 </li>
                 <li><a class="dropdown-item" href="#">Facci una domanda</a></li>
               </ul>
-            </li>
-            </li>
           </ul>
-          <div>
-          </div>
-    </nav>
+        </div>
+      <div>
+    </div>
+  </nav>
   </header>
   <main>
     <section> <!-- sezione principale tabella e titolo con bottone aggiunta libro -->
       <div class="container">
         <div class="row pt-5">
-          <div class="col-lg-7">
+          <div class="col">
             <div class="d-flex justify-content-between">
               <h1>
                 Cataloghi Libri
@@ -90,24 +88,22 @@
                   <th scope="col"></th>
                   <th scope="col">Data prestito</th>
                   <th scope="col">Stato</th>
-                  <th style="text-align:center" scope="col">Azioni</th>
+                  <th scope="col">Azioni</th>
                 </tr>
               </thead>
-              <tbody style="vertical-align: middle;">
+              <tbody>
                 <tr>
                   <td scope="row">I piatti della terra</td>
                   <td></td>
                   <td>-</td>
                   <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
-                  <td style="vertical-align: middle; text-align: center">
+                  <td>
                     <!-- icone modifcia e elimina contenuti in una casella della tabella (flex) -->
-                    <button style="border: none; background: none">
-                      <i style="margin-top: 4px; display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-trash3-fill"></i>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-trash3-fill"></i>
                     </button>
-                    <button style="border: none; background: none;">
-                      <i style="display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-pencil-fill"></i>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
                     </button>
                   </td>
                 </tr>
@@ -117,14 +113,12 @@
                   <td>18/10/23</td>
                   <td><span class=" badge rounded-pill text-bg-warning text-white">In prestito</span>
                   </td>
-                  <td style="vertical-align: middle; text-align: center">
-                    <button style="border: none; background: none">
-                      <i style="margin-top: 4px; display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-trash3-fill"></i>
+                  <td>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-trash3-fill"></i>
                     </button>
-                    <button style="border: none; background: none;">
-                      <i style="display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-pencil-fill"></i>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
                     </button>
                   </td>
                 </tr>
@@ -134,14 +128,12 @@
                   <td></td>
                   <td>-</td>
                   <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
-                  <td style="vertical-align: middle; text-align: center">
-                    <button style="border: none; background: none">
-                      <i style="margin-top: 4px; display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-trash3-fill"></i>
+                  <td>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-trash3-fill"></i>
                     </button>
-                    <button style="border: none; background: none;">
-                      <i style="display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-pencil-fill"></i>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
                     </button>
                   </td>
                 </tr>
@@ -150,14 +142,12 @@
                   <td></td>
                   <td>-</td>
                   <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
-                  <td style="vertical-align: middle; text-align: center">
-                    <button style="border: none; background: none">
-                      <i style="margin-top: 4px; display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-trash3-fill"></i>
+                  <td>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-trash3-fill"></i>
                     </button>
-                    <button style="border: none; background: none;">
-                      <i style="display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-pencil-fill"></i>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
                     </button>
                   </td>
                 </tr>
@@ -167,14 +157,12 @@
                   <td></td>
                   <td>-</td>
                   <td><span class="badge rounded-pill text-bg-danger">Non disponibile</span></td>
-                  <td style="vertical-align: middle; text-align: center">
-                    <button style="border: none; background: none">
-                      <i style="margin-top: 4px; display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-trash3-fill"></i>
+                  <td>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-trash3-fill"></i>
                     </button>
-                    <button style="border: none; background: none;">
-                      <i style="display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-pencil-fill"></i>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
                     </button>
                   </td>
                 </tr>
@@ -182,16 +170,14 @@
                   <td scope="row">Shining</td>
                   <td></td>
                   <td>10/8/23</td>
-                  <td><span style="background-color: rgb(255, 166, 32);" class="badge rounded-pill">In prestito</span>
+                  <td><span class="badge rounded-pill text-bg-warning text-white">In prestito</span>
                   </td>
-                  <td style="vertical-align: middle; text-align: center">
-                    <button style="border: none; background: none">
-                      <i style="margin-top: 4px; display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-trash3-fill"></i>
+                  <td>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-trash3-fill"></i>
                     </button>
-                    <button style="border: none; background: none;">
-                      <i style="display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-pencil-fill"></i>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
                     </button>
                   </td>
                 </tr>
@@ -201,14 +187,12 @@
                   <td></td>
                   <td>-</td>
                   <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
-                  <td style="vertical-align: middle; text-align: center">
-                    <button style="border: none; background: none">
-                      <i style="margin-top: 4px; display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-trash3-fill"></i>
+                  <td>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-trash3-fill"></i>
                     </button>
-                    <button style="border: none; background: none;">
-                      <i style="display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-pencil-fill"></i>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
                     </button>
                   </td>
                 </tr>
@@ -216,16 +200,14 @@
                   <td scope="row">Il trono di spade </td>
                   <td></td>
                   <td>18/10/23</td>
-                  <td><span style="background-color: rgb(255, 166, 32);" class=" badge rounded-pill">In prestito</span>
+                  <td><span class=" badge rounded-pill text-bg-warning text-white">In prestito</span>
                   </td>
-                  <td style="vertical-align: middle; text-align: center">
-                    <button style="border: none; background: none">
-                      <i style="margin-top: 4px; display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-trash3-fill"></i>
+                  <td>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-trash3-fill"></i>
                     </button>
-                    <button style="border: none; background: none;">
-                      <i style="display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-pencil-fill"></i>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
                     </button>
                   </td>
                 </tr>
@@ -235,14 +217,12 @@
                   <td></td>
                   <td>-</td>
                   <td><span class="badge rounded-pill text-bg-danger">Non disponibile</span></td>
-                  <td style="vertical-align: middle; text-align: center">
-                    <button style="border: none; background: none">
-                      <i style="margin-top: 4px; display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-trash3-fill"></i>
+                  <td>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-trash3-fill"></i>
                     </button>
-                    <button style="border: none; background: none;">
-                      <i style="display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-pencil-fill"></i>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
                     </button>
                   </td>
                 </tr>
@@ -251,14 +231,12 @@
                   <td></td>
                   <td>21/9/23</td>
                   <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
-                  <td style="vertical-align: middle; text-align: center">
-                    <button style="border: none; background: none">
-                      <i style="margin-top: 4px; display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-trash3-fill"></i>
+                  <td>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-trash3-fill"></i>
                     </button>
-                    <button style="border: none; background: none;">
-                      <i style="display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-pencil-fill"></i>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
                     </button>
                   </td>
                 </tr>
@@ -268,14 +246,12 @@
                   <td></td>
                   <td>-</td>
                   <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
-                  <td style="vertical-align: middle; text-align: center">
-                    <button style="border: none; background: none">
-                      <i style="margin-top: 4px; display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-trash3-fill"></i>
+                  <td>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-trash3-fill"></i>
                     </button>
-                    <button style="border: none; background: none;">
-                      <i style="display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-pencil-fill"></i>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
                     </button>
                   </td>
                 </tr>
@@ -284,14 +260,12 @@
                   <td></td>
                   <td>-</td>
                   <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
-                  <td style="vertical-align: middle; text-align: center">
-                    <button style="border: none; background: none">
-                      <i style="margin-top: 4px; display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-trash3-fill"></i>
+                  <td>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-trash3-fill"></i>
                     </button>
-                    <button style="border: none; background: none;">
-                      <i style="display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-pencil-fill"></i>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
                     </button>
                   </td>
                 </tr>
@@ -301,14 +275,12 @@
                   <td></td>
                   <td>-</td>
                   <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
-                  <td style="vertical-align: middle; text-align: center">
-                    <button style="border: none; background: none">
-                      <i style="margin-top: 4px; display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-trash3-fill"></i>
+                  <td>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-trash3-fill"></i>
                     </button>
-                    <button style="border: none; background: none;">
-                      <i style="display: inline-block; padding:5px 10px; border: 3px solid gray; border-radius: 5px;"
-                        class="bi bi-pencil-fill"></i>
+                    <button class=" btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
                     </button>
                   </td>
                 </tr>
@@ -316,10 +288,8 @@
 
             </table>
           </div>
-          <div class="col-lg-5">
-            <div
-              style="background-image: url(https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); background-size: cover; background-position-y: calc(20%); "
-              class="card">
+          <div class="col-lg-4">
+            <div class="card">
 
               <div class="card-header"><!-- card ceckbox cose da fare  -->
                 <h1>Todo</h1>
@@ -340,77 +310,76 @@
               </ul>
             </div>
             <div class="pt-4">
-              <div style="background-image: url(./img/book.jpeg); background-size: cover; background-position:100%;"
-                class="card">
-
+              <div class="card">
                 <div class="card-header"> <!-- card FAQ con titolo lista a caduta e immagine libri -->
                   <h1>F.A.Q.</h1>
                 </div>
-                <ul class="list-group list-group-flush p-3 pt-2 ">
-                  <li class="list-group-item">
-                    <div class="dropdown" data-bs-theme="light">
-                      <button style="background: white; color: black; border: none;"
-                        class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Come aggiungere un nuovo libro?
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
                       </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
-                        <li><a class="dropdown-item active" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Separated link</a></li>
-                      </ul>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                      </div>
                     </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="dropdown" data-bs-theme="light">
-                      <button style="background: white; color: black; border: none;"
-                        class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Altre preferenze
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
                       </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
-                        <li><a class="dropdown-item active" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Separated link</a></li>
-                      </ul>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="dropdown" data-bs-theme="light">
-                      <button style="background: white; color: black; border: none;"
-                        class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Scelti da scrittori
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
                       </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
-                        <li><a class="dropdown-item active" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Separated link</a></li>
-                      </ul>
-                  </li>
-                  <img
-                    style="height: 300px; margin-top: 10px; padding: 10px 0px; border-top-right-radius: 100px; border-bottom-left-radius: 100px;"
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figure class="figure-img rounded m-2 ">
+                  <img class="img-fluid rounded"
                     src="https://signorinalave.com/wp-content/uploads/2023/02/tamas-pap-9PWTATmFNEU-unsplash-1140x865.jpg"
                     alt="">
-                </ul>
+                </figure>
+              
               </div>
             </div>
           </div>
-
+          
         </div>
       </div>
     </section>
