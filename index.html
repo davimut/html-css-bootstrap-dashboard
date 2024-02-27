@@ -16,16 +16,17 @@
 <body class="vh-100 d-flex flex-column overflow-hidden">
 
   <header>
+    
     <!-- navbar con logo liste a spazione -->
-    <nav class="py-0 navbar navbar-expand-lg bg-black navbar-dark  border-bottom border-body">
+    <nav class="py-0 navbar navbar-expand-lg bg-black navbar-dark  border-bottom border-body ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="ms-3 p-2 " style="width: 5rem" src="./img/duck.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
           aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav  navbar-nav-scroll d-flex">
+        <div class="collapse navbar-collapse justify-content-between me-5 pe-5" id="navbarScroll">
+          <a class="navbar-brand" href="#"><img class="ms-3 p-2 " style="width: 5rem" src="./img/duck.png" alt=""></a>
+          <ul class="navbar-nav  navbar-nav-scroll d-flex ">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
             </li>
@@ -49,7 +50,7 @@
             <li class="">
               <a class="nav-link disabled" aria-disabled="true"></a>
             </li>
-            <li class="nav-item dropdown ms-auto"> <!-- menu lato destro navbar -->
+            <li class="nav-item dropdown "> <!-- menu lato destro navbar -->
               <a class="nav-link dropdown-toggle  ms-auto" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Menu
@@ -319,7 +320,7 @@
                     <h2 class="accordion-header">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Accordion Item #1
+                        Come aggiungere un nuovo libro?
                       </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
@@ -337,7 +338,7 @@
                     <h2 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Accordion Item #2
+                        Come posso accedere all anagrafica utenti?
                       </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -355,7 +356,7 @@
                     <h2 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Accordion Item #3
+                       Posso usare questa dashboard da mobile?
                       </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
