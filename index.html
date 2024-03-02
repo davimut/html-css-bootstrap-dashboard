@@ -13,61 +13,55 @@
   <link rel="stylesheet" href="./css/app.css">
 </head>
 
-<body class="vh-100 d-flex flex-column overflow-hidden">
+<body class="vh-100 d-flex flex-column">
 
   <header>
-    
-    <!-- navbar con logo liste a spazione -->
-    <nav class="py-0 navbar navbar-expand-lg bg-black navbar-dark  border-bottom border-body ">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-between me-5 pe-5" id="navbarScroll">
-          <a class="navbar-brand" href="#"><img class="ms-3 p-2 " style="width: 5rem" src="./img/duck.png" alt=""></a>
-          <ul class="navbar-nav  navbar-nav-scroll d-flex ">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Anagrafica Utenti</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Storico prestiti
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Raccolta</a></li>
-                <li><a class="dropdown-item" href="#">I tuoi preferiti</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Continua a leggere</a></li>
-              </ul>
-            </li>
-            <li class="">
-              <a class="nav-link disabled" aria-disabled="true"></a>
-            </li>
-            <li class="nav-item dropdown "> <!-- menu lato destro navbar -->
-              <a class="nav-link dropdown-toggle  ms-auto" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Menu
-              </a>
-              <ul class="dropdown-menu ">
-                <li><a class="dropdown-item" href="#">Profilo</a></li>
-                <li><a class="dropdown-item" href="#">I tuoi ordini</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Facci una domanda</a></li>
-              </ul>
-          </ul>
-        </div>
-      <div>
-    </div>
-  </nav>
+  <!-- navbar con logo liste a spazione -->
+  <nav class="py-0 navbar navbar-expand-lg bg-black navbar-dark  border-bottom border-body ">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between me-5 pe-5" id="navbarScroll">
+        <a class="navbar-brand" href="./index.html"><img class="ms-3 p-2 " src="./img/duck.png" alt=""></a>
+        <ul class="navbar-nav  navbar-nav-scroll d-flex ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Catalogo libri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="./new_client.html">Nuovo utente</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Storico prestiti
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Raccolta</a></li>
+              <li><a class="dropdown-item" href="#">I tuoi preferiti</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Continua a leggere</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown"> <!-- menu lato destro navbar -->
+            <a class="nav-link dropdown-toggle  ms-auto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item" href="#">Profilo</a></li>
+              <li><a class="dropdown-item" href="#">I tuoi ordini</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Facci una domanda</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    <div>
+  </div>
+</nav>
   </header>
   <main>
     <section> <!-- sezione principale tabella e titolo con bottone aggiunta libro -->
@@ -318,12 +312,12 @@
                 <div class="accordion" id="accordionExample">
                   <div class="accordion-item">
                     <h2 class="accordion-header">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         Come aggiungere un nuovo libro?
                       </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         <strong>This is the first item's accordion body.</strong> It is shown by default, until the
                         collapse plugin adds the appropriate classes that we use to style each element. These classes
@@ -371,7 +365,7 @@
                     </div>
                   </div>
                 </div>
-                <figure class="figure-img rounded m-2 ">
+                <figure  class="figure-img rounded m-2 ">
                   <img class="img-fluid rounded"
                     src="https://signorinalave.com/wp-content/uploads/2023/02/tamas-pap-9PWTATmFNEU-unsplash-1140x865.jpg"
                     alt="">

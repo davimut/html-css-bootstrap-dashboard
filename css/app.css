@@ -1,1 +1,6 @@
-nav > a > img{ width: 80px;}
+nav a > img{ width: 80px;
+}
+
+.Mywelcometitle { 
+    text-align: center
+}
